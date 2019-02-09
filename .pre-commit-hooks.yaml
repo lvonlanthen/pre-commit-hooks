@@ -1,0 +1,10 @@
+-   id: js-debug-statements
+    name: Check for JS debug statements
+    entry: 'console.log|debugger'
+    language: pygrep
+    files: '.*\.(js|vue)$'
+-   id: py-check-pytest-marks
+    name: Check for pytest marks
+    entry: '@pytest.mark.foo|@pytest.mark.bar'
+    language: pygrep
+    types: [python]
